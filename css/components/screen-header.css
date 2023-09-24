@@ -1,0 +1,46 @@
+.screen-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    /* padding-top: var(--horizontal-space); */
+    padding-top: 50px;
+    margin-bottom: 15px;
+}
+
+.screen-header__title {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.screen-header__icons span {
+    margin-left: 25px;
+}
+
+.screen-header__icons-shirink {
+    background-color: tomato;
+    width: 5px;
+    height: 5px;
+    border-radius:3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    /* left:30px; */
+    /* bottom:300px; */
+    right: 12px;
+    top: 50px;
+}
+
+@keyframes rotateCog {
+    from {
+        transform: none;
+    }
+    to {
+        transform: rotateZ(36deg);
+    }
+}
+
+.screen-header__icons .fa-cog:hover {
+    animation: rotateCog 1s linear infinite;
+}
